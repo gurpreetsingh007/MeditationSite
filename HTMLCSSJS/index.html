@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#D9CBAE" />
+    <meta name="description"
+        content="HealFlow — a peaceful meditation site for beginners with five easy techniques and a gentle 1‑minute guided practice." />
+    <title>HealFlow — Meditation for Beginners</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./healflow.css" />
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <div class="brand">
+                <svg class="logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                    <defs>
+                        <linearGradient id="hf-g" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#F6F0E6" />
+                            <stop offset="100%" stop-color="#FBF9F4" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="24" cy="24" r="22" fill="url(#hf-g)" />
+                    <!-- Droplet / flow mark in warm tones -->
+                    <path d="M24 10c4 6 10 10 10 16a10 10 0 1 1-20 0c0-6 6-10 10-16z" fill="none" stroke="#A68A6D"
+                        stroke-width="2.2" stroke-linecap="round" />
+                    <path d="M16 27c3 2 7 2 10 0 2-1.5 4-1.5 6 0" fill="none" stroke="#BFAF8D" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+                <span class="brand-name">HealFlow</span>
+            </div>
+            <nav aria-label="Main">
+                <ul class="nav">
+                    <li><a href="#course">Course</a></li>
+                    <li><a href="#techniques">Techniques</a></li>
+                    <li><a href="#practice">Practice</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><button class="btn btn-primary" data-open-modal="#quickPractice">1‑min Practice</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="ambient">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+            </div>
+            <div class="container hero-inner">
+                <h1 id="hero-title"><span class="display brand-title">HealFlow</span></h1>
+                <p class="subtitle">Gentle guidance and five beginner‑friendly techniques to invite calm into your day.
+                </p>
+                <div class="hero-cta">
+                    <a class="btn btn-primary" href="#techniques">Explore Techniques</a>
+                    <button class="btn" data-open-modal="#quickPractice">Try 1‑minute</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="techniques" class="section" aria-labelledby="tech-title">
+            <div class="container">
+                <h2 id="tech-title" class="section-title">Five Techniques for Beginners</h2>
+                <p class="section-intro">Start with one technique. Keep it simple—2 to 5 minutes is enough. Consistency
+                    is the key.</p>
+
+                <div class="cards">
+                    <!-- 1. Mindfulness -->
+                    <article class="card" tabindex="0">
+                        <h3>Mindfulness</h3>
+                        <p>Observe your breath and sensations—gently returning attention whenever it wanders.</p>
+                        <details>
+                            <summary>How to practice</summary>
+                            <ol>
+                                <li>Sit comfortably. Soften your gaze or close your eyes.</li>
+                                <li>Notice your breath at the nostrils or belly.</li>
+                                <li>When thoughts arise, acknowledge and return to breath.</li>
+                                <li>End by noticing how you feel—no judgment.</li>
+                            </ol>
+                            <p class="benefit">Benefits: clarity, focus, emotional balance.</p>
+                            <button class="btn btn-small" data-open-modal="#quickPractice" data-tech="mindfulness">Try
+                                1‑minute</button>
+                        </details>
+                    </article>
+
+                    <!-- 2. Loving‑Kindness -->
+                    <article class="card" tabindex="0">
+                        <h3>Loving‑Kindness (Metta)</h3>
+                        <p>Silently offer friendly wishes to yourself and others.</p>
+                        <details>
+                            <summary>How to practice</summary>
+                            <ol>
+                                <li>Repeat phrases like: “May I be safe. May I be well.”</li>
+                                <li>Extend to a friend, a neutral person, and all beings.</li>
+                                <li>Let the tone be gentle; no need to force feelings.</li>
+                            </ol>
+                            <p class="benefit">Benefits: warmth, connection, reduced self‑criticism.</p>
+                            <button class="btn btn-small" data-open-modal="#quickPractice"
+                                data-tech="lovingkindness">Try 1‑minute</button>
+                        </details>
+                    </article>
+
+                    <!-- 3. Body Scan -->
+                    <article class="card" tabindex="0">
+                        <h3>Body Scan</h3>
+                        <p>Travel attention from head to toe, noticing sensations and relaxing gently.</p>
+                        <details>
+                            <summary>How to practice</summary>
+                            <ol>
+                                <li>Start at the crown; move through face, shoulders, chest.</li>
+                                <li>Continue arms, hands, torso, hips, legs, and feet.</li>
+                                <li>Note tension and allow it to soften with exhale.</li>
+                            </ol>
+                            <p class="benefit">Benefits: relaxation, body awareness, better sleep.</p>
+                            <button class="btn btn-small" data-open-modal="#quickPractice" data-tech="bodyscan">Try
+                                1‑minute</button>
+                        </details>
+                    </article>
+
+                    <!-- 4. Breath Awareness -->
+                    <article class="card" tabindex="0">
+                        <h3>Breath Awareness</h3>
+                        <p>Gently count the breath or feel the rhythm—no need to change it.</p>
+                        <details>
+                            <summary>How to practice</summary>
+                            <ol>
+                                <li>Count exhale 1–10; then start again at 1.</li>
+                                <li>If you lose count, simply restart—no problem.</li>
+                            </ol>
+                            <p class="benefit">Benefits: calmer mood, steadier attention.</p>
+                            <button class="btn btn-small" data-open-modal="#quickPractice" data-tech="breath">Try
+                                1‑minute</button>
+                        </details>
+                    </article>
+
+                    <!-- 5. Mantra -->
+                    <article class="card" tabindex="0">
+                        <h3>Mantra</h3>
+                        <p>Quietly repeat a soothing word or phrase to steady the mind.</p>
+                        <details>
+                            <summary>How to practice</summary>
+                            <ol>
+                                <li>Choose a simple word, e.g., “So‑Hum” or “Peace.”</li>
+                                <li>Repeat in sync with the breath—inhale, exhale.</li>
+                            </ol>
+                            <p class="benefit">Benefits: focus, easing of rumination.</p>
+                            <button class="btn btn-small" data-open-modal="#quickPractice" data-tech="mantra">Try
+                                1‑minute</button>
+                        </details>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6-Week Course -->
+        <section id="course" class="section course" aria-labelledby="course-title">
+            <div class="container">
+                <header class="course-header">
+                    <h2 id="course-title" class="section-title">6‑Week Self‑Reflective Meditation Series</h2>
+                    <p class="byline">By <strong>BayG</strong> (Meditation Instructor for Beginners)</p>
+                    <p class="section-intro">Each week builds gently on the last. Explore the theme, try the short
+                        practice, and reflect using the prompt provided.</p>
+                </header>
+
+                <div class="weeks">
+                    <!-- Week 1 -->
+                    <article class="week card course-card" data-week="1" tabindex="0">
+                        <div class="badge">Week 1</div>
+                        <h3>Breath Awareness & Centering</h3>
+                        <p class="theme"><strong>Theme:</strong> Returning to Self</p>
+                        <p class="practice"><strong>Practice:</strong> Mindful breathing, noticing thoughts without
+                            judgment.</p>
+                        <details>
+                            <summary>Reflection Prompt</summary>
+                            <p>“What does calm feel like in my body?”</p>
+                        </details>
+                        <p class="takeaway"><strong>Takeaway:</strong> Breath is the doorway to self‑awareness.</p>
+                        <div class="inline-controls">
+                            <button class="btn btn-small btn-primary" data-open-modal="#videoModal"
+                                data-tech="breath">Open Practice</button>
+                        </div>
+                    </article>
+
+                    <!-- Week 2 -->
+                    <article class="week card course-card" data-week="2" tabindex="0">
+                        <div class="badge">Week 2</div>
+                        <h3>Body Scan & Inner Listening</h3>
+                        <p class="theme"><strong>Theme:</strong> What Is My Body Telling Me?</p>
+                        <p class="practice"><strong>Practice:</strong> Guided body scan, noticing sensations and stored
+                            tension.</p>
+                        <details>
+                            <summary>Reflection Prompt</summary>
+                            <p>“Where do I hold stress, and what might that say about me?”</p>
+                        </details>
+                        <p class="takeaway"><strong>Takeaway:</strong> The body is a mirror for inner emotions.</p>
+                        <div class="inline-controls">
+                            <button class="btn btn-small btn-primary" data-open-modal="#videoModal"
+                                data-tech="bodyscan">Open Practice</button>
+                        </div>
+                    </article>
+
+                    <!-- Week 3 -->
+                    <article class="week card course-card" data-week="3" tabindex="0">
+                        <div class="badge">Week 3</div>
+                        <h3>Guided Visualization & Personal Symbols</h3>
+                        <p class="theme"><strong>Theme:</strong> Exploring My Inner Landscape</p>
+                        <p class="practice"><strong>Practice:</strong> Visualization of a safe or peaceful place.</p>
+                        <details>
+                            <summary>Reflection Prompt</summary>
+                            <p>“What did I see/feel in my inner sanctuary, and what does it reveal about my needs right
+                                now?”</p>
+                        </details>
+                        <p class="takeaway"><strong>Takeaway:</strong> Imagination reveals subconscious truths.</p>
+                        <div class="inline-controls">
+                            <button class="btn btn-small btn-primary" data-open-modal="#videoModal"
+                                data-tech="visualization">Open Practice</button>
+                        </div>
+                    </article>
+
+                    <!-- Week 4 -->
+                    <article class="week card course-card" data-week="4" tabindex="0">
+                        <div class="badge">Week 4</div>
+                        <h3>Loving‑Kindness & Self‑Compassion</h3>
+                        <p class="theme"><strong>Theme:</strong> Learning to Be Kind to Myself</p>
+                        <p class="practice"><strong>Practice:</strong> Sending compassion to self first, then outward.
+                        </p>
+                        <details>
+                            <summary>Reflection Prompt</summary>
+                            <p>“What words of kindness do I most need to hear from myself?”</p>
+                        </details>
+                        <p class="takeaway"><strong>Takeaway:</strong> Healing starts with self‑love.</p>
+                        <div class="inline-controls">
+                            <button class="btn btn-small btn-primary" data-open-modal="#videoModal"
+                                data-tech="lovingkindness">Open Practice</button>
+                        </div>
+                    </article>
+
+                    <!-- Week 5 -->
+                    <article class="week card course-card" data-week="5" tabindex="0">
+                        <div class="badge">Week 5</div>
+                        <h3>Mindfulness of Thoughts & Emotions</h3>
+                        <p class="theme"><strong>Theme:</strong> Meeting My Inner World</p>
+                        <p class="practice"><strong>Practice:</strong> Observing thoughts/emotions without attaching to
+                            them.</p>
+                        <details>
+                            <summary>Reflection Prompt</summary>
+                            <p>“What recurring thoughts or emotions showed up, and what do they teach me?”</p>
+                        </details>
+                        <p class="takeaway"><strong>Takeaway:</strong> We are not our thoughts; we can observe them with
+                            clarity.</p>
+                        <div class="inline-controls">
+                            <button class="btn btn-small btn-primary" data-open-modal="#videoModal"
+                                data-tech="mindfulness">Open Practice</button>
+                        </div>
+                    </article>
+
+                    <!-- Week 6 -->
+                    <article class="week card course-card" data-week="6" tabindex="0">
+                        <div class="badge">Week 6</div>
+                        <h3>Walking Meditation & Life Integration</h3>
+                        <p class="theme"><strong>Theme:</strong> Carrying Presence Into My Life</p>
+                        <p class="practice"><strong>Practice:</strong> Slow, mindful walking; feeling each step as a
+                            metaphor for daily living.</p>
+                        <details>
+                            <summary>Reflection Prompt</summary>
+                            <p>“How can I bring mindfulness and self‑awareness into everyday routines?”</p>
+                        </details>
+                        <p class="takeaway"><strong>Takeaway:</strong> Meditation isn’t separate from life—it is life.
+                        </p>
+                        <div class="inline-controls">
+                            <button class="btn btn-small btn-primary" data-open-modal="#videoModal"
+                                data-tech="walking">Open Practice</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="practice" class="section alt" aria-labelledby="practice-title">
+            <div class="container practice-grid">
+                <div>
+                    <h2 id="practice-title" class="section-title">A Gentle 1‑Minute Practice</h2>
+                    <p>Tap start and follow the cues. We’ll use “Box Breathing” (4‑4‑4‑4): inhale 4, hold 4, exhale 4,
+                        hold 4.</p>
+                    <ul class="tips">
+                        <li>Sit upright yet relaxed. Shoulders soft.</li>
+                        <li>It’s okay if the mind wanders—just begin again.</li>
+                        <li>Stop if you feel dizzy; breathe naturally.</li>
+                    </ul>
+                    <div class="inline-controls">
+                        <button class="btn btn-primary" data-open-modal="#quickPractice">Open Practice</button>
+                        <a class="btn" href="#about">Why meditation?</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="preview canvas" aria-hidden="true">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title" class="section-title">Why meditate?</h2>
+                <p>Meditation gently trains attention and kindness. Short, regular practice is linked to improved mood,
+                    sleep, and focus. Start small, be patient, and let the benefits accumulate.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> HealFlow • Be kind to your mind</p>
+            <div class="footer-links">
+                <a href="#techniques">Techniques</a>
+                <a href="#practice">Practice</a>
+                <a href="#about">About</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quick Practice Modal -->
+    <div id="quickPractice" class="modal" role="dialog" aria-modal="true" aria-labelledby="qp-title"
+        aria-describedby="qp-desc" hidden>
+        <div class="modal-backdrop" data-close-modal></div>
+        <div class="modal-dialog" role="document">
+            <button class="modal-close" aria-label="Close practice" data-close-modal>×</button>
+            <h2 id="qp-title">1‑Minute Guided Practice</h2>
+            <p id="qp-desc" class="muted">Follow the prompts. You can change the pace or technique flavor.</p>
+
+            <form class="controls" onsubmit="return false;">
+                <label>
+                    Tempo
+                    <select id="tempo">
+                        <option value="4" selected>Box (4‑4‑4‑4)</option>
+                        <option value="5">Gentle (5‑5‑5‑5)</option>
+                        <option value="3">Light (3‑3‑3‑3)</option>
+                    </select>
+                </label>
+                <label>
+                    Duration
+                    <select id="duration">
+                        <option value="60" selected>1 minute</option>
+                        <option value="120">2 minutes</option>
+                    </select>
+                </label>
+                <label>
+                    Flavor
+                    <select id="flavor">
+                        <option value="mindfulness">Mindfulness</option>
+                        <option value="lovingkindness">Loving‑Kindness</option>
+                        <option value="bodyscan">Body Scan</option>
+                        <option value="breath">Breath Awareness</option>
+                        <option value="mantra">Mantra</option>
+                        <option value="visualization">Visualization</option>
+                        <option value="walking">Walking</option>
+                    </select>
+                </label>
+            </form>
+
+            <div class="practice-stage">
+                <div class="canvas" aria-live="polite" aria-atomic="true">
+                    <div class="circle" id="breathCircle"></div>
+                    <div class="cue" id="cueText">Ready</div>
+                    <div class="timer"><span id="timeLeft">01:00</span></div>
+                </div>
+                <div class="stage-controls">
+                    <button id="startBtn" class="btn btn-primary">Start</button>
+                    <button id="pauseBtn" class="btn" disabled>Pause</button>
+                    <button id="resetBtn" class="btn" disabled>Reset</button>
+                </div>
+            </div>
+
+            <p class="muted small">If you feel light‑headed, stop and breathe naturally. Adjust tempo to what feels
+                comfortable.</p>
+        </div>
+    </div>
+
+    <!-- Week Practice Video Modal -->
+    <div id="videoModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="vp-title"
+        aria-describedby="vp-desc" hidden>
+        <div class="modal-backdrop" data-close-modal></div>
+        <div class="modal-dialog" role="document">
+            <button class="modal-close" aria-label="Close video" data-close-modal>×</button>
+            <h2 id="vp-title">Practice Preview</h2>
+            <p id="vp-desc" class="muted small">A short 10‑second clip reflecting this week's practice.</p>
+
+            <div class="practice-stage video-stage">
+                <video id="practiceVideo" class="video" controls preload="metadata" playsinline>
+                    <source id="practiceVideoSource" src="" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <p id="videoFallback" class="muted small" hidden>Video not found. Place a 10‑second MP4 at
+                    <code>HTMLCSSJS/assets/videos/&lt;name&gt;.mp4</code>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js" defer></script>
+</body>
+
+</html>
